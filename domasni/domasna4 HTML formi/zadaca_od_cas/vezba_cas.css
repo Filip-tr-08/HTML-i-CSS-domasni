@@ -1,0 +1,90 @@
+.parrent {
+  position: relative;
+  height: 700px;
+}
+.buttons {
+  position: absolute;
+  margin: auto;
+  right: 0px;
+  bottom: 15px;
+}
+.tparrent {
+  position: relative;
+}
+.rlabel {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-right: 150px;
+}
+#remark {
+  position: absolute;
+  left: 150px;
+}
+button {
+  margin: 5px;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-style: oblique;
+}
+
+.radio_parrent {
+  position: relative;
+  width: 200px;
+}
+#male {
+  position: absolute;
+  top: 0px;
+  left: 150px;
+}
+#female {
+  position: absolute;
+  top: 25px;
+  left: 150px;
+}
+.label1 {
+  position: absolute;
+  top: 0px;
+  left: 170px;
+}
+.label2 {
+  position: absolute;
+  top: 25px;
+  left: 170px;
+}
+.checkbox_parrent {
+  position: relative;
+  width: 200px;
+}
+#lunch {
+  position: absolute;
+  top: 0px;
+  left: 150px;
+}
+#breakfast {
+  position: absolute;
+  top: 25px;
+  left: 150px;
+}
+#dinner {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+.lab1 {
+  position: absolute;
+  top: 0px;
+  left: 170px;
+}
+.lab2 {
+  position: absolute;
+  top: 25px;
+  left: 170px;
+}
+.lab3 {
+  position: absolute;
+  top: 50px;
+  left: 170px;
+}

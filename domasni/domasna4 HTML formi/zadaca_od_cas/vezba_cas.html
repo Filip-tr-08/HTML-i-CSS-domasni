@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 150px;
+      }
+    </style>
+    <link rel="stylesheet" href="./vezba_cas.css" type="text/css" />
+  </head>
+  <body>
+    <form action="" method="POST">
+      <fieldset class="parrent">
+        <legend><strong>Testform</strong></legend>
+        <div class="parrent">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+          <br /><br />
+          <label for="pass">Password</label>
+          <input type="password" name="pass" id="pass" required />
+          <br /><br />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+          <br /><br />
+          <label for="file">Atach your CV here:</label>
+          <input type="file" name="file" id="file" />
+          <br /><br />
+          <label for="b_day">Your birthday:</label>
+          <input type="date" name="b_day" id="b_day" />
+          <br /><br />
+          <label for="color">Favourite colour:</label>
+          <input type="color" name="color" id="color" />
+          <br /><br />
+          <script type="text/javascript">
+            function updateTextInput(val) {
+              document.getElementById("textInput").value = val;
+            }
+          </script>
+          <label for="years">Years:</label>
+          <input
+            id="years"
+            type="range"
+            value="2"
+            min="2"
+            max="100"
+            onInput="updateTextInput(this.value)"
+            onchange="updateTextInput(this.value)"
+          />
+          <input type="text" id="textInput" />
+          <div class="radio_parrent">
+            <p>Gender</p>
+            <input type="radio" name="gender" value="male" id="male" />
+            <label for="male" class="label1">Male</label>
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female" class="label2">Female</label>
+          </div>
+          <br /><br />
+          <label for="continent">Continent</label>
+          <select name="continent" id="continent">
+            <option disabled selected>Please select...</option>
+            <option value="europa">Europa</option>
+            <option value="africa">Africa</option>
+            <option value="n_america">North America</option>
+            <option value="s_america">South America</option>
+            <option value="australia">Australia</option>
+            <option value="asia">Asia</option>
+            <option value="antarctica">Antarctica</option>
+          </select>
+          <br /><br />
+          <div class="checkbox_parrent">
+            <p>Meals</p>
+            <input
+              type="checkbox"
+              name="meal"
+              value="breakfast"
+              id="breakfast"
+            />
+            <label for="breakfast" class="lab1">Breakfast</label>
+            <br />
+            <input type="checkbox" name="meal" value="lunch" id="lunch" />
+            <label for="lunch" class="lab2">Lunch</label>
+            <br />
+            <input type="checkbox" name="meal" value="dinner" id="dinner" />
+            <label for="dinner" class="lab3">Dinner</label>
+          </div>
+          <br /><br />
+          <div class="tparrent">
+            <label for="remark" class="rlabel">Remark</label>
+            <textarea name="remark" id="remark" cols="60" rows="5"></textarea>
+          </div>
+          <div></div>
+          <div class="buttons">
+            <button
+              style="
+                background-color: green;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+            >
+              Send
+            </button>
+            <button
+              type="reset"
+              style="
+                background-color: red;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

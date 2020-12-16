@@ -1,0 +1,166 @@
+<doctype html>
+    <html>
+
+    <head>
+        <script defer src="./js fajlovi/js/jquery-3.5.1.min.js" type="text/javascript"></script>
+        <script defer src="./js fajlovi/script.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="./style/style.css" type="text/css">
+        
+        <title>Final Fantasy VII</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="top"><a href="index.html">Final Fantasy <span class="VII">VII</a></span>
+            </h1>
+            <img class="header_img" src="./images/ff7.png"></img>
+        </header>
+        <nav id="nav-bar">
+            <ul>
+                <li class="bold"><a href="index.html">Home</a></li>
+                <li class="bold"><a href="Story.html">The story</a></li>
+                <li class="bold"><a href="S_P.html">Sequels and prequels</a></li>
+                <li class="bold"><a href="other.html">All FF games</a></li>
+            </ul>
+        </nav>
+
+        <section id="characters">
+            <h2><strong>Characters</strong></h2>
+
+            <ul class="list-characters">
+                <li><a href="Cloud.html">Cloud</a>
+                    <a href="Cloud.html"><img src="./images/cloud.png" class="images"></a>
+                </li>
+                <li><a href="Tifa.html">Tifa</a>
+                    <a href="Tifa.html"><img src="./images/tifa.png" class="images"></a>
+                </li>
+                <li><a href="Barret.html">Barret</a>
+                    <a href="Barret.html"><img src="./images/barret.png"class="images"></a>
+                </li>
+                <li><a href="Vincent.html">Vincent</a>
+                    <a href="Vincent.html"><img src="./images/vincent.png" class="images"></a>
+                </li>
+                <li><a href="Yuffie.html">Yuffie</a>
+                    <a href="Yuffie.html"><img src="./images/Yuffie.png" class="images"></a>
+                </li>
+                <li><a href="Cid.html">Cid</a>
+                    <a href="Cid.html"><img src="./images/cid.png" class="images"></a>
+                </li>
+                <li><a href="Nanaki.html">RED XIII / Nanaki</a>
+                    <a href="Nanaki.html"><img src="./images/nanaki.png" class="images"></a>
+                </li>
+                <li><a href="Cait_Sith.html">Cait Sith</a>
+                    <a href="Cait_Sith.html"><img src="./images/cait sith.png" class="images"></a>
+                </li>
+                <li><a href="Aeris.html">Aeris / Aerith</a>
+                    <a href="Aeris.html"><img src="./images/Aeris.png"class="images"></a>
+                </li>
+                <li><a href="Sephiroth.html">Sephiroth</a>
+                    <a href="Sephiroth.html"><img src="./images/Sephiroth.png" class="images"></a>
+                </li>
+            </ul>
+        </section>
+        <content>
+            <img src="./images/midgar.jpg">
+            <h2>Why you should see this page:</h2>
+            <p>If you want to know more about Final Fantasy VII universe this is the place for you. Everything about the story of this fantastic game, the characters, the sequels and prequels of this game and more. There are many prequels and sequels in
+                the form of games,cartoons and even movies. Each character is unique so you would want know more about them. And there are many more FF games so you can read about them too. </p>
+            <h2>Basic about the game:</h2>
+            <p>This game is made by squaresoft in 1997. Now there is a remake in 2020 Final Fantasy Remake which include only the events in midgar. This game is an RPG that was first anounced as a playstation 1 game but than it was for PC too. The remake
+                is of Playsation 4. It is considered as one of all time best games, and the best game for 1997. Well if you want to experience the journeys of Cloud and the others you should play this game.</p>
+        </content>
+        <div id="reg-form">
+            <h3>If you want to download this game please register here:</h3>
+            <form action="" method="">
+                <fieldset>
+                    <legend>Registration</legend>
+                    <p>
+                        <label for="first-name">First name:</label>
+                        <input type="text" name="first-name" placeholder="First Name" required>
+                    </p>
+                    <p>
+                        <label for="Last-name">Last name:</label>
+                        <input type="text" name="last-name" placeholder="Last name" required>
+                    </p>
+                    <p>
+                        <label for="date">Birthday:</label>
+                        <input type="date" name="date" placeholder="Birthday">
+                    </p>
+                    <p>
+                        <script type="text/javascript">
+                            function updateTextInput(val) {
+                                document.getElementById('textInput').value = val;
+                            }
+                        </script>
+                        <label for="years">Years:</label>
+                        <input id="years" type="range" value="2" min="2" max="100" onInput="updateTextInput(this.value)" onchange="updateTextInput(this.value)">
+                        <input class="range" type="text" id="textInput">
+                    </p>
+                    <p>
+                        <label for="email">Email Adresss:</label>
+                        <input type="email" name="email" placeholder="example@email.com" required>
+                    </p>
+                    <p>
+                        <label for="tel">Tel:</label>
+                        <input type="tel" name="tel" placeholder="+389.." required>
+                    </p>
+                    <p> 
+                        <label for="gender-choice">Male</label>
+                        <input type="radio" name="gender-choice" value="male">
+                        <label for="gender-choice">Female</label>
+                        <input type="radio" name="gender-choice" value="female">
+                    </p>
+                    <p>
+                        <label for="location">Location:</label>
+                        <input list="location" placeholder="Where are you?">
+                        <datalist id="location">
+<option>Skopje</option>
+<option>Prilep</option>
+<option>Kumanovo</option>
+</datalist>
+                    </p>
+                    <p>
+                        <label for="game">Check the games you have played:</label>
+                        <table>
+                            <tr>
+                                <td><input type="checkbox" name="game" id="name">FF1</td>
+<td><input type="checkbox" name="game" id="name">FF2</td>
+                                <td><input type="checkbox" name="game" id="name">FF3</td>
+</tr>
+<tr>
+<td><input type="checkbox" name="game" id="name">FF4</td>
+                                <td><input type="checkbox" name="game" id="name">FF5</td>
+<td><input type="checkbox" name="game" id="name">FF6</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="game" id="name">FF7</td>
+<td><input type="checkbox" name="game" id="name">FF8</td>
+                                <td>
+                                    <input type="checkbox" name="game" id="name">FF9</td>
+</tr>
+ <tr>
+                                <td><input type="checkbox" name="game" id="name">FF10</td>
+<td><input type="checkbox" name="game" id="name">FF11</td>
+                                <td>
+                                    <input type="checkbox" name="game" id="name">FF12</td>
+</tr>
+ <tr>
+                                <td><input type="checkbox" name="game" id="name">FF13</td>
+<td><input type="checkbox" name="game" id="name">FF14</td>
+                                <td>
+                                    <input type="checkbox" name="game" id="name">FF15</td>
+</tr>
+</table>
+</p>
+<p>
+<button class="submit">Submit Registration</button>
+</p>
+</fieldset>
+</form>
+
+</div>
+</body>
+<footer>
+<h3 class="foot"><a href="#top">Final Fantasy VII Copyright &copy;</a><h3> 
+</footer>
+</html>
