@@ -1,4 +1,17 @@
 body {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  background: linear-gradient(to right, green 30%, black 50%);
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+main {
+  width: fit-content;
+  height: fit-content;
   box-sizing: border-box;
   background: linear-gradient(to right, green 30%, black 50%);
   margin: 0px;
