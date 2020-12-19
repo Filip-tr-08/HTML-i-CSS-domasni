@@ -1,0 +1,92 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+}
+
+main {
+  box-sizing: border-box;
+  background-color: black;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  margin: 0px;
+}
+header {
+  background: inherit;
+  float: left;
+  width: 200px;
+  height: 615px;
+  margin-right: 20px;
+  padding: 0px 0px 0px 0px;
+}
+.first-cube {
+  float: left;
+  background-color: blanchedalmond;
+  width: 200px;
+  height: 250px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+}
+.sec-cube {
+  float: left;
+  width: 200px;
+  height: 326px;
+  background-color: blanchedalmond;
+  margin-top: 60px;
+}
+content {
+  display: inline-block;
+  background-color: red;
+  width: 700px;
+  height: 640px;
+  margin-bottom: 20px;
+}
+footer {
+  display: block;
+  clear: both;
+  width: 920px;
+  height: 230px;
+  background-color: black;
+}
+.fourth-cube {
+  float: left;
+  width: 200px;
+  height: 230px;
+  background-color: lightseagreen;
+  margin-right: 20px;
+}
+.three-cubes {
+  display: inline-block;
+  width: 700px;
+  height: 230px;
+  margin: 0px;
+}
+.fifth-cube {
+  float: left;
+  width: 650px;
+  height: 230px;
+  margin-right: 20px;
+  background-color: blanchedalmond;
+}
+.two-cubes {
+  float: right;
+  margin-right: 0px;
+}
+.sixth-cube {
+  display: block;
+  margin-right: 0px;
+  margin-top: 0px;
+  background-color: blanchedalmond;
+  width: 30px;
+  height: 100px;
+}
+.seventh-cube {
+  display: block;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  background-color: yellow;
+  width: 30px;
+  height: 100px;
+}
