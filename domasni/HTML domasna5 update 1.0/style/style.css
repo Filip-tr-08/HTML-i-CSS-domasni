@@ -1,13 +1,10 @@
 body {
   display: flex;
   justify-content: center;
-  width: fit-content;
-  height: fit-content;
-  box-sizing: border-box;
+  width: 1238px;
+  height: 1000px;
   background: linear-gradient(to right, green 30%, black 50%);
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  margin: auto;
 }
 main {
   width: fit-content;
