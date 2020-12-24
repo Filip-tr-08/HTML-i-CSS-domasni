@@ -1,0 +1,267 @@
+body {
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section {
+  margin-top: 200px;
+  border: 1px black solid;
+  padding: 2px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+article {
+  margin: 0px;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dark-red {
+  background-color: rgb(206, 59, 59);
+}
+.light-red {
+  background-color: rgb(245, 87, 87);
+}
+.reac {
+  position: fixed;
+  width: 100px;
+  height: 15px;
+  background-color: rgb(245, 87, 87);
+
+  padding: 0px;
+  text-align: center;
+}
+.reac > h5 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  height: 15px;
+}
+article .complete {
+  width: 101px;
+  height: 16px;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+article .complete > .hidden-reac {
+  width: 100px;
+  height: 15px;
+  border-bottom: white 2px solid;
+  border-top: 2px white solid;
+  margin: 0px;
+  z-index: 1;
+  animation: slide-background infinite 8s ease-out;
+}
+
+.sec-reac {
+  position: fixed;
+  width: 100px;
+  height: 15px;
+  background-color: rgb(206, 59, 59);
+
+  padding: 0px;
+  text-align: center;
+}
+.sec-reac > h5 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  height: 15px;
+}
+article .complete {
+  width: 101px;
+  height: 16px;
+  border: none;
+  padding: 0px;
+
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+article .complete > .sec-hidden-reac {
+  width: 100px;
+  height: 15px;
+  background-color: white;
+  margin: 0px;
+  z-index: 1;
+  animation: slide-background infinite 8s ease-out;
+}
+@keyframes slide-background {
+  0% {
+    width: 0px;
+    height: 15px;
+    opacity: 1;
+  }
+  95% {
+    transform: scaleX(100px);
+    opacity: 1;
+  }
+  96% {
+    opacity: 0.8;
+  }
+  97% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+article .three-circles {
+  width: 35px;
+  height: 35px;
+  padding: 0px;
+  position: fixed;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: rotate-circles infinite 0.8s ease-in-out;
+}
+.circle-1 {
+  width: 5px;
+  height: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.6;
+  margin-right: 10px;
+}
+.circle-2 {
+  width: 5px;
+  height: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+  position: fixed;
+}
+.circle-3 {
+  width: 5px;
+  height: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.6;
+  margin-left: 10px;
+}
+@keyframes rotate-circles {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(180deg);
+  }
+}
+.cube_circle {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cube_circle > .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: white;
+  animation: circle-translate 2s linear infinite;
+}
+@keyframes circle-translate {
+  0% {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  25% {
+    position: absolute;
+    top: 0;
+    left: 38px;
+  }
+  50% {
+    top: 38px;
+    left: 38px;
+  }
+  75% {
+    top: 38px;
+    left: 0px;
+  }
+  100% {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.cube {
+  position: fixed;
+  width: 30px;
+  height: 31px;
+  background-color: rgb(245, 87, 87);
+
+  padding: 0px;
+}
+
+article .complete-cube {
+  width: 31px;
+  height: 31px;
+  border: none;
+  padding: 0px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+article .complete-cube > .hidden-cube {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  margin: 0px;
+  z-index: 1;
+  animation: slide-background1 infinite 8s ease-out;
+}
+@keyframes slide-background1 {
+  0% {
+    width: 0px;
+    height: 30px;
+    opacity: 1;
+  }
+  95% {
+    transform: scaleX(30px);
+    opacity: 1;
+  }
+  96% {
+    opacity: 0.8;
+  }
+  97% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
